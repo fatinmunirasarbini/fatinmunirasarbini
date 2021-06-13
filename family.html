@@ -1,0 +1,298 @@
+<head>
+<link rel="stylesheet" type="text/css"
+href="style.css" />
+	<meta charset="utf-8">
+	<title>
+		My Personal Website
+	</title>
+</head>
+<marquee>family time!</marquee>
+<head>
+<link rel="stylesheet" type="text/css"
+href="style.css" />
+	<meta charset="utf-8">
+	<title>
+		My Personal Website
+	</title>
+
+<body background="image/burung.png" link="000" alink="#017bf5" vlink="000">
+	<br />
+	<h3 align="center">
+		<img src="image/logo.png " alt="alternatetext" width="100" height="100">
+		
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	
+		<font face="cinzel">
+			
+			<a href="index.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="portfolio.html">PORTFOLIO</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="myexperinced.html">EXPERIENCED</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="education.html">EDUCATION</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="family.html">FAMILY</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="gallery.html">GALLERY</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="pets.html">PETS</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+<br>
+<br>
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		My Personal Website
+	</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="image/f1.png" style="width:100%">
+  <div class="text">My dad & mom</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="image/f2.png" style="width:100%">
+  <div class="text">Bella, mom, & me</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="image/f3.png" style="width:100%">
+  <div class="text">bella</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="image/f4.png" style="width:100%">
+  <div class="text">Danny, dad, & Zul</div>
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</head>
+<p>
+To me, family means:
+
+I will never be truly alone, and
+I'll always have a place to call home.
+I have people who know the real me,
+And they still love me even if we disagree.
+Though sometimes we may fuss and fight,
+In the end everything will be all right
+Because families forgive each other no matter what.
+That's just the way it is, no ifs, ands, or buts.
+Family stays true all the way down the line,
+And I couldn't live without these people of mine.
+Yes, this is what family means to me,
+If this rings true for you, then I'm sure you agree.
+</p>
+<br>
+<title>HTML Table</title>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+
+  
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr {
+  background-color: #F0B27A;
+}
+</style>
+</head>
+<body>
+
+
+<table border="1" width="90%" align="center" cellpadding="3" 
+cellspacing="3">
+  <tr>
+    <th >Photo</th>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td colspan="1"><img src="image/g1.png"></td>
+    <td>Sarbini bin Karim</td>
+    <td>Named Sarbini Bin Karim, he was born in 1974 in a village located in Sebuyau, Sarawak. He is the eldest child of 5 siblings. After he grew up as a teenager, he traveled to the peninsula to get a job. He is a brother and father who is very responsible for his family. He had served as a member of the navy for 12 years and then he got an offer to work as a Malaysian maritime member.</td>
+  </tr>
+  <tr>
+    <td colspan="1" width="50" height="50"><img src="image/g2.png"></td>
+    <td>Mariah binti Ibrahim</td>
+    <td>The name Mariah binti Ibrahim was born in 1979 in a village located in Pulau Pangkor, Perak. He is the fourth child of 5 siblings. After growing up as a teenager, he worked various types of work such as trading, clerk and others. She also got offers to be a model and stewardess but her ambitions were thwarted by her father. His father was a very pious man who did not allow his son to undress for a job. After getting married, the mother became a full -fledged housewife to this day.</td>
+  </tr>
+  <tr>
+    <td colspan="1"><img src="image/g3.png"></td>
+    <td>Fatin Munira binti Sarbini</td>
+    <td>I was born on 10 May 2000 at Hospital Angkatan Tentera, Lumut, Perak. My favorite food is sushi, the famous food from Japan. And my favorite drinks are usually milo, green tea and tea c special. My hobbies are watching Netflix, listening to my fav songs, and dancing if I have free time. I love to travel; in my childhood, I only had the opportunity to travel around Malaysia only and I aspire to travel abroad in the future if I have rezeki and good carrier. I once dreamed to become a military officer to continue my father legacy and also interested in opening a business with my friend.</td>
+  </tr>
+  <tr>
+    <td colspan="1"><img src="image/g4.png"></td>
+    <td>Muhammad Zulfikrie bin Sarbini</td>
+    <td>Muhammad Zulfikrie bin Sarbini was born in small island at Pulau Pangkor, Perak. He is the 2nd child of 4 siblings. He loves to palying Pubg in everyday and all night. This year he will occupy in SPM, and i hope he will get the best result in sha allah. But to be honest he doesnot study at all, i dont know what on his mind. His dad getting tired to advice him everyday because he pretend like nothing will happen to his life.</td>
+  </tr>
+  <tr>
+    <td colspan="1"><img src="image/g5.png"></td>
+    <td>Muhammad Danial bin Sarbini</td>
+    <td>Muhammad Danial is a very genius boy, when he was 6 years old he knew how to solve multiplication questions, he was also very good in english subjects. He once aspired to be a fighter jet pilot when he was 7 years old. His whole family is very proud of his achievement. After he moved from Sabah, he started playing games and did not focus on learning. His test results also all deteriorated except for the english subject. His family is very disappointed and still hopes he will be a fighter jet pilot one day.</td>
+  </tr>
+  <tr>
+    <td colspan="1"><img src="image/g6.png"></td>
+    <td>Fatin Nabila binti Sarbini</td>
+    <td>Fatin Nabila was born in 2011 and she is the youngest of 4 siblings. She was a very cute little girl and had white skin. Nabila is happy to make friends with any person she has just met, and of course she is very friendly, her mouth never stops talking. She loves to cook and helps mom in the kitchen to prepare meals for her family. In addition, he also loves baking. A variety of cake dishes she makes for us.</td>
+  </tr>
+</table>
+
+</body>
+</html>
